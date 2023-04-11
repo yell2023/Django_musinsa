@@ -18,7 +18,7 @@ class ProductModel(models.Model):
         ('L', 'Large'),
         ('F', 'Free'),
     )
-    size = models.CharField(choices=sizes, max_length=1)
+    size = models.CharField(choices=sizes, max_length=1,default='Free')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
